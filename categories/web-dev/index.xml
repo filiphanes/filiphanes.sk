@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web Dev on Filip Hanes</title>
-    <link>http://filiphanes.github.io/filiphanes.sk/categories/web-dev/index.xml</link>
+    <link>https://filiphanes.github.io/filiphanes.sk/categories/web-dev/index.xml</link>
     <description>Recent content in Web Dev on Filip Hanes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>sk-sk</language>
     <copyright>&amp;copy; Filip Hanes</copyright>
-    <atom:link href="http://filiphanes.github.io/filiphanes.sk/categories/web-dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://filiphanes.github.io/filiphanes.sk/categories/web-dev/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Skript na základnú inštaláciu wordpressu</title>
-      <link>http://filiphanes.github.io/filiphanes.sk/web-dev/skript-zakladnu-instalaciu-wordpressu/</link>
+      <link>https://filiphanes.github.io/filiphanes.sk/web-dev/skript-zakladnu-instalaciu-wordpressu/</link>
       <pubDate>Fri, 14 Oct 2016 20:45:36 +0100</pubDate>
       
-      <guid>http://filiphanes.github.io/filiphanes.sk/web-dev/skript-zakladnu-instalaciu-wordpressu/</guid>
+      <guid>https://filiphanes.github.io/filiphanes.sk/web-dev/skript-zakladnu-instalaciu-wordpressu/</guid>
       <description>&lt;p&gt;V prípade, že mám prístup k serveru SSH alebo inštalujem na localhoste, tento skriptík zrýchli počiatočnú inštaláciu a konfiguráciu wordpressu.&lt;/p&gt;
 
 &lt;p&gt;Príkaz wp je &lt;a href=&#34;https://wp-cli.org/&#34;&gt;WP-CLI&lt;/a&gt;&lt;/p&gt;
