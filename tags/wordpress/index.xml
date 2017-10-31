@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wordpress on Filip Hanes</title>
+    <link>http://filiphanes.github.io/filiphanes.sk/tags/wordpress/index.xml</link>
+    <description>Recent content in Wordpress on Filip Hanes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>sk-sk</language>
+    <copyright>&amp;copy; Filip Hanes</copyright>
+    <atom:link href="http://filiphanes.github.io/filiphanes.sk/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Skript na základnú inštaláciu wordpressu</title>
+      <link>http://filiphanes.github.io/filiphanes.sk/web-dev/skript-zakladnu-instalaciu-wordpressu/</link>
+      <pubDate>Fri, 14 Oct 2016 20:45:36 +0100</pubDate>
+      
+      <guid>http://filiphanes.github.io/filiphanes.sk/web-dev/skript-zakladnu-instalaciu-wordpressu/</guid>
+      <description>&lt;p&gt;V prípade, že mám prístup k serveru SSH alebo inštalujem na localhoste, tento skriptík zrýchli počiatočnú inštaláciu a konfiguráciu wordpressu.&lt;/p&gt;
+
+&lt;p&gt;Príkaz wp je &lt;a href=&#34;https://wp-cli.org/&#34;&gt;WP-CLI&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Postup na &lt;a href=&#34;https://wp-cli.org/docs/installing/&#34;&gt;inštaláciu WP-CLI nájdete tu&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pred spustení je treba:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;vyrobiť databázu,&lt;/li&gt;
+&lt;li&gt;upraviť skript&lt;/li&gt;
+&lt;li&gt;nastaviť prístupy do DB&lt;/li&gt;
+&lt;li&gt;doménu&lt;/li&gt;
+&lt;li&gt;názov webu&lt;/li&gt;
+&lt;li&gt;meno admin účtu&lt;/li&gt;
+&lt;li&gt;heslo&lt;/li&gt;
+&lt;li&gt;email&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Potom stačí skript spustiť v priečinku, v ktorom chceme mať WP nainštalovaný.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#!/usr/bin/sh
+# nastavi prava, aby som mohol instalovat
+# sudo chmod g+rws .
+
+# stiahne wp
+wp core download
+
+#nastavi config.php a pristup do db
+wp core config –dbname=DATABASE –dbuser=USER –dbpass=PASSWORD
+
+#nainstaluje wp
+wp core install –url=domena.sk –title=NovyWeb –admin_user=menoadmina –admin_password=PASSWORD –admin_email=email@admina.sk
+
+#nastavi slovencinu
+wp core language install sk_SK –activate
+
+# aktualizuje, pluginy, temy a jazyky
+wp plugin update –all
+
+# nainstaluje a aktivuje najpouzivanejsie pluginy
+wp plugin install contact-form-7 wordpress-seo nextgen-gallery easy-fancybox siteorigin-panels child-theme-configurator –activate
+
+# iba nainstaluje pluginy
+
+wp plugin install w3-total-cache woocommerce woocommerce-menu-bar-cart polylang \
+google-analytics-dashboard-for-wp multisite-enhancements postman forge disable-emojis \
+cpo-widgets cpo-shortcodes advanced-custom-fields adminer
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

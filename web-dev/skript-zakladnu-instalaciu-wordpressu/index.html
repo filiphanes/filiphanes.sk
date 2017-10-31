@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="sk-sk">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Skript na základnú inštaláciu wordpressu -- Filip Hanes</title>
+
+    
+
+    
+    <link href="http://filiphanes.github.io/filiphanes.sk/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="http://filiphanes.github.io/filiphanes.sk/css/clean-blog.min.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://filiphanes.github.io/filiphanes.sk">Filip Hanes</a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="http://filiphanes.github.io/filiphanes.sk/">home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://filiphanes.github.io/filiphanes.sk/post/">Archives</a>
+                    </li>
+                    
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('http://filiphanes.github.io/filiphanes.sk//img/about-bg.jpg')">
+      
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Skript na základnú inštaláciu wordpressu</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">
+                 
+  A 1 minute read,
+
+Posted by <a href="#">Filip Hanes</a> on Fri, Oct 14, 2016
+<br />
+In <a href="http://filiphanes.github.io/filiphanes.sk/categories/web-dev">Web-Dev</a>
+
+<br />
+Tags <a href="http://filiphanes.github.io/filiphanes.sk/tags/php">php</a>, <a href="http://filiphanes.github.io/filiphanes.sk/tags/wordpress">wordpress</a>, <a href="http://filiphanes.github.io/filiphanes.sk/tags/bash">bash</a>, <a href="http://filiphanes.github.io/filiphanes.sk/tags/web">web</a>, <a href="http://filiphanes.github.io/filiphanes.sk/tags/development">development</a>
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <p>V prípade, že mám prístup k serveru SSH alebo inštalujem na localhoste, tento skriptík zrýchli počiatočnú inštaláciu a konfiguráciu wordpressu.</p>
+
+<p>Príkaz wp je <a href="https://wp-cli.org/">WP-CLI</a></p>
+
+<p>Postup na <a href="https://wp-cli.org/docs/installing/">inštaláciu WP-CLI nájdete tu</a>.</p>
+
+<p>Pred spustení je treba:</p>
+
+<ul>
+<li>vyrobiť databázu,</li>
+<li>upraviť skript</li>
+<li>nastaviť prístupy do DB</li>
+<li>doménu</li>
+<li>názov webu</li>
+<li>meno admin účtu</li>
+<li>heslo</li>
+<li>email</li>
+</ul>
+
+<p>Potom stačí skript spustiť v priečinku, v ktorom chceme mať WP nainštalovaný.</p>
+
+<pre><code class="language-sh">#!/usr/bin/sh
+# nastavi prava, aby som mohol instalovat
+# sudo chmod g+rws .
+
+# stiahne wp
+wp core download
+
+#nastavi config.php a pristup do db
+wp core config –dbname=DATABASE –dbuser=USER –dbpass=PASSWORD
+
+#nainstaluje wp
+wp core install –url=domena.sk –title=NovyWeb –admin_user=menoadmina –admin_password=PASSWORD –admin_email=email@admina.sk
+
+#nastavi slovencinu
+wp core language install sk_SK –activate
+
+# aktualizuje, pluginy, temy a jazyky
+wp plugin update –all
+
+# nainstaluje a aktivuje najpouzivanejsie pluginy
+wp plugin install contact-form-7 wordpress-seo nextgen-gallery easy-fancybox siteorigin-panels child-theme-configurator –activate
+
+# iba nainstaluje pluginy
+
+wp plugin install w3-total-cache woocommerce woocommerce-menu-bar-cart polylang \
+google-analytics-dashboard-for-wp multisite-enhancements postman forge disable-emojis \
+cpo-widgets cpo-shortcodes advanced-custom-fields adminer
+</code></pre>
+
+                  
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    
+                      <li>
+                        <a href="mailto:filip.hanes@gmail.com">
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </a>
+                      </li>
+                    
+                    
+                    <li>
+                      <a href="https://twitter.com/filiphanes">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/filiphanes">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.facebook.com/fhanes1">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted">&amp;copy; Filip Hanes</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="http://filiphanes.github.io/filiphanes.sk/js/jquery.min.js"></script>
+
+    
+    <script src="http://filiphanes.github.io/filiphanes.sk/js/bootstrap.min.js"></script>
+
+    
+    <script src="http://filiphanes.github.io/filiphanes.sk/js/clean-blog.js"></script>
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-67252886-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+
+</html>
+
