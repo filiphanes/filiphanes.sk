@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Filip Hanes</title>
-    <link>https://filiphanes.github.io/filiphanes.sk/index.xml</link>
+    <link>https://filiphanes.sk/index.xml</link>
     <description>Recent content on Filip Hanes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>sk-sk</language>
     <copyright>&amp;copy; Filip Hanes</copyright>
     <lastBuildDate>Tue, 31 Oct 2017 22:26:04 +0100</lastBuildDate>
-    <atom:link href="https://filiphanes.github.io/filiphanes.sk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://filiphanes.sk/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Bot</title>
-      <link>https://filiphanes.github.io/filiphanes.sk/en/bot/</link>
+      <link>https://filiphanes.sk/en/bot/</link>
       <pubDate>Tue, 31 Oct 2017 22:26:04 +0100</pubDate>
       
-      <guid>https://filiphanes.github.io/filiphanes.sk/en/bot/</guid>
+      <guid>https://filiphanes.sk/en/bot/</guid>
       <description>&lt;p&gt;Hi,&lt;/p&gt;
 
 &lt;p&gt;my bot probably hit your site. If you have problem with that or you are interested in my services, write me an email to filip.hanes@gmail.com&lt;/p&gt;
@@ -24,10 +24,10 @@
     
     <item>
       <title>kontakt</title>
-      <link>https://filiphanes.github.io/filiphanes.sk/kontakt/</link>
+      <link>https://filiphanes.sk/kontakt/</link>
       <pubDate>Tue, 31 Oct 2017 21:42:09 +0100</pubDate>
       
-      <guid>https://filiphanes.github.io/filiphanes.sk/kontakt/</guid>
+      <guid>https://filiphanes.sk/kontakt/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Filip Hanes&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Mobil: +421 908 527 408&lt;/p&gt;
@@ -38,10 +38,10 @@
     
     <item>
       <title>Projekty</title>
-      <link>https://filiphanes.github.io/filiphanes.sk/projekty/</link>
+      <link>https://filiphanes.sk/projekty/</link>
       <pubDate>Tue, 31 Oct 2017 21:37:44 +0100</pubDate>
       
-      <guid>https://filiphanes.github.io/filiphanes.sk/projekty/</guid>
+      <guid>https://filiphanes.sk/projekty/</guid>
       <description>
 
 &lt;h3 id=&#34;weby-postavené-na-wordpresse-aktívne-plochy-bytov-pozemkov-google-maps-api&#34;&gt;Weby postavené na WordPresse, aktívne plochy bytov/pozemkov, Google maps API,&lt;/h3&gt;
@@ -69,10 +69,10 @@
     
     <item>
       <title>Skript na základnú inštaláciu wordpressu</title>
-      <link>https://filiphanes.github.io/filiphanes.sk/web-dev/skript-zakladnu-instalaciu-wordpressu/</link>
+      <link>https://filiphanes.sk/web-dev/skript-zakladnu-instalaciu-wordpressu/</link>
       <pubDate>Fri, 14 Oct 2016 20:45:36 +0100</pubDate>
       
-      <guid>https://filiphanes.github.io/filiphanes.sk/web-dev/skript-zakladnu-instalaciu-wordpressu/</guid>
+      <guid>https://filiphanes.sk/web-dev/skript-zakladnu-instalaciu-wordpressu/</guid>
       <description>&lt;p&gt;V prípade, že mám prístup k serveru SSH alebo inštalujem na localhoste, tento skriptík zrýchli počiatočnú inštaláciu a konfiguráciu wordpressu.&lt;/p&gt;
 
 &lt;p&gt;Príkaz wp je &lt;a href=&#34;https://wp-cli.org/&#34;&gt;WP-CLI&lt;/a&gt;&lt;/p&gt;
@@ -127,10 +127,10 @@ cpo-widgets cpo-shortcodes advanced-custom-fields adminer
     
     <item>
       <title>Porovnanie materiálov na akustické tlmenie</title>
-      <link>https://filiphanes.github.io/filiphanes.sk/audio-video/porovnanie-materialov-akusticke-tlmenie/</link>
+      <link>https://filiphanes.sk/audio-video/porovnanie-materialov-akusticke-tlmenie/</link>
       <pubDate>Thu, 13 Oct 2016 21:14:49 +0100</pubDate>
       
-      <guid>https://filiphanes.github.io/filiphanes.sk/audio-video/porovnanie-materialov-akusticke-tlmenie/</guid>
+      <guid>https://filiphanes.sk/audio-video/porovnanie-materialov-akusticke-tlmenie/</guid>
       <description>
 
 &lt;p&gt;V odhlučnení miestností sa šíri veľa mýtov ako obaly z vajec, molitany a pod. Myslím si, že je to preto, lebo je ťažké zohnať konkrétne čísla tlmenia rôznych materiálov. Rôzni predajcovia udávajú len rozmery, hrúbku, hmotnosť, pričom najpodstatnejšia informácia je tlmiaci koeficient alfa. Druhým dôvodom mýtov je, že rôzne materiály naozaj po nasadení zmenia zvuk v priestore, dokonca aj utlmia niektoré frekvencie. Problémom je však, že utlmia stredy a výšky, a nevyriešia problém s basovými frekvenciami a teda v konečnom dôsledku nezlepšia akustiku miestnosti. Pozháňal som teda informácie o rôznych materiáloch a prikladám odkazy a grafy.&lt;/p&gt;
@@ -141,7 +141,7 @@ cpo-widgets cpo-shortcodes advanced-custom-fields adminer
 
 &lt;p&gt;&lt;a href=&#34;http://www.plasticsportal.net/wa/plasticsEU~en_GB/portal/show/content/products/foams/basotect_properties&#34;&gt;http://www.plasticsportal.net/wa/plasticsEU~en_GB/portal/show/content/products/foams/basotect_properties&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://filiphanes.github.io/filiphanes.sk/wp-content/uploads/2016/10/basotect-physical.gif &amp;quot;Copyright 2001 – 2016 BASF SE&#34; alt=&#34;basotect physical&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://filiphanes.sk/wp-content/uploads/2016/10/basotect-physical.gif &amp;quot;Copyright 2001 – 2016 BASF SE&#34; alt=&#34;basotect physical&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;akustická-sklená-minerálna-vata&#34;&gt;Akustická sklená/minerálna vata&lt;/h2&gt;
 
@@ -149,20 +149,20 @@ cpo-widgets cpo-shortcodes advanced-custom-fields adminer
 
 &lt;p&gt;&lt;a href=&#34;http://www.obifon.sk/produkty/akusticke-panely-a-kazety/stenove-panely/penove-a-textilne-prvky/item/193-textilny-panel.html&#34;&gt;http://www.obifon.sk/produkty/akusticke-panely-a-kazety/stenove-panely/penove-a-textilne-prvky/item/193-textilny-panel.html&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://filiphanes.github.io/filiphanes.sk/wp-content/uploads/2016/10/textilny-panel.jpg&#34; alt=&#34;textilny-panel&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://filiphanes.sk/wp-content/uploads/2016/10/textilny-panel.jpg&#34; alt=&#34;textilny-panel&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.obifon.sk/produkty/akusticke-panely-a-kazety/stenove-panely.html&#34;&gt;http://www.obifon.sk/produkty/akusticke-panely-a-kazety/stenove-panely.html&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;akustické-panely-obifony&#34;&gt;Akustické panely (Obifony)&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://filiphanes.github.io/filiphanes.sk/wp-content/uploads/2016/10/Modular-Standart.jpg&#34; alt=&#34;modular-standart&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://filiphanes.sk/wp-content/uploads/2016/10/Modular-Standart.jpg&#34; alt=&#34;modular-standart&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.obifon.sk/sposob-aplikacie/stena/modular-skoly.html&#34;&gt;http://www.obifon.sk/sposob-aplikacie/stena/modular-skoly.html&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;látkové-bavlnené-panely&#34;&gt;Látkové/bavlnené panely&lt;/h2&gt;
 
 &lt;p&gt;Stered Acoustic
-&lt;img src=&#34;https://filiphanes.github.io/filiphanes.sk/wp-content/uploads/2016/10/stered-acoustic-pohltivost.jpg&#34; alt=&#34;stered-acoustic-pohltivost&#34; title=&#34;Graf pohltivosti 50mm hrubej platne Stered Acoustic&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://filiphanes.sk/wp-content/uploads/2016/10/stered-acoustic-pohltivost.jpg&#34; alt=&#34;stered-acoustic-pohltivost&#34; title=&#34;Graf pohltivosti 50mm hrubej platne Stered Acoustic&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://eshop.potichu.sk/produkt/stered-acoustic-50-0-72m2/&#34;&gt;https://eshop.potichu.sk/produkt/stered-acoustic-50-0-72m2/&lt;/a&gt;
 Technický list &lt;a href=&#34;http://potichu.sk/wp-content/uploads/2015/05/stered_acoustic_technicky_list.pdf&#34;&gt;Stered Acoustic&lt;/a&gt;.&lt;/p&gt;
@@ -173,10 +173,10 @@ Technický list &lt;a href=&#34;http://potichu.sk/wp-content/uploads/2015/05/ste
     
     <item>
       <title>Ako som zefektívnil pravidelné spracovanie nahrávok</title>
-      <link>https://filiphanes.github.io/filiphanes.sk/audio-video/zefektivnil-pravidelne-spracovanie-nahravok/</link>
+      <link>https://filiphanes.sk/audio-video/zefektivnil-pravidelne-spracovanie-nahravok/</link>
       <pubDate>Wed, 12 Oct 2016 21:05:42 +0100</pubDate>
       
-      <guid>https://filiphanes.github.io/filiphanes.sk/audio-video/zefektivnil-pravidelne-spracovanie-nahravok/</guid>
+      <guid>https://filiphanes.sk/audio-video/zefektivnil-pravidelne-spracovanie-nahravok/</guid>
       <description>&lt;p&gt;V &lt;a href=&#34;http://milost.sk/&#34;&gt;kresťanskom spoločenstve&lt;/a&gt; nahrávame 2x týždenne 2 nahrávky – chvály a kázeň.&lt;/p&gt;
 
 &lt;p&gt;Nahrávame v mixpulte na USB kľúč. Odtiaľ nahrávku prenášame do notebooku. V &lt;a href=&#34;http://www.audacityteam.org/&#34;&gt;Audacity&lt;/a&gt; orežeme začiatok, koniec, znormalizujeme hlasitosť a na kázeň aplikujeme aj kompresor. Výsledok uložíme do mp3 formátu a nahráme na google disk, kde si môžu nahrávku vypočuť hodobníci. Pre chvály používame formát mp3 (ABR, najmenej 128kbps kvalitu, &lt;a href=&#34;https://sk.wikipedia.org/wiki/Joint_stereo&#34;&gt;joint stereo&lt;/a&gt;). Pre kázeň stačí mp3 VBR, 96kbps, mono.&lt;/p&gt;
