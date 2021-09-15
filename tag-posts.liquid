@@ -1,0 +1,17 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter: post
+permalink: /tags/{{ tag }}/
+title: {{tag}}
+layout: default.liquid
+---
+<h1 class="tag-title">#{{ tag | capitalize }}</h1>
+
+<div class="posts">
+{% for post in collections[tag] -%}
+    {% include post-list-entry %}
+{%- endfor %}
+</div>

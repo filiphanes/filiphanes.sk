@@ -1,0 +1,109 @@
+* {
+    box-sizing: content-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    color: rgb(41, 41, 41);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1>a,
+h2>a {
+    color: #114;
+}
+
+header {
+    display: block;
+    padding: 1rem;
+    margin: 0;
+    background: #222;
+    color: #eee;
+}
+
+header .container {
+    max-width: 100%;
+    width: 1192px;
+    margin: 0 auto;
+}
+
+header a {
+    color: #eee;
+}
+
+header h1 {
+    margin: 0 2rem 0 0;
+    display: inline-block;
+}
+
+header .nav {
+    display: inline-block;
+}
+
+header ul {
+    padding: 0 0 0 1rem;
+    margin: 0;
+}
+
+header li {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0 0 0;
+    background: #222;
+    color: #eee;
+}
+
+footer a {
+    color: lightblue;
+}
+
+main {
+    padding: 1rem;
+    min-height: calc(100vh - 11rem);
+}
+
+.page,
+.post,
+.posts {
+    display: block;
+    width: 50rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.posts h2 {
+    font-size: 24px;
+    margin: 1rem 0 0 0;
+}
+
+.post img {
+    max-width: 100%;
+}
+
+.post-meta {
+    color: gray;
+    display: block;
+    margin: 0 0 1rem;
+}
+
+.tag-title {
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+<header id="header">
+  <div class="container">
+    <h1><a href="/" alt="home"{% if page.url=="/" %} aria-current="page"{% endif %}>Filip Hanes</a></h1>
+    <nav class="nav">
+      <ul>
+        <li {% if page.url=="/kontakt/" %} aria-current="page"{% endif %}><a href="/kontakt/">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<script>
+document.querySelector('.nav').addEventListener('click', function(e) {
+  e.target.classList.toggle('open');
+});
+</script>

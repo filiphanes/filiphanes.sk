@@ -1,0 +1,14 @@
+---
+layout: default.liquid
+---
+<article class="post h-entry">
+  <h1 class="p-name">{{ title }}</h1>
+  <span class="post-meta">
+    <time class="dt-published" datetime="{{ date | date: '%Y-%m-%d' }}">{{ date | date: "%d.%m.%Y" }}</time>
+    {% for tag in tags %}{% if tag != "post" %}<a href="/tags/{{ tag }}" class="p-category">#{{ tag }}</a> {% endif %}{% endfor -%}
+    {% comment %} {{ post | readingTime }} min čítania, {% endcomment %}
+  </span>
+
+  <img src="{{thumbnail}}" />
+  {{ content }}
+</article>
