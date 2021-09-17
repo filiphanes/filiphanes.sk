@@ -2,7 +2,8 @@
 date: "2021-09-07T21:30:00+02:00"
 title: "WORM storage ideas"
 tags: ["post", "storage", "filesystem"]
-thumbnail: "img/streaming.jpg"
+thumbnail: "/img/streaming.jpg"
+draft: true
 ---
 
 # Ideas

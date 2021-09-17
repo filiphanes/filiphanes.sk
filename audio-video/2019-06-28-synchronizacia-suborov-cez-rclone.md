@@ -1,7 +1,6 @@
 ---
 date: "2019-06-28T20:32:42+01:00"
 title: "Synchronizácia súborov cez rclone"
-thumbnail: "img/streaming.jpg"
 tags: ["post", "audio", "storage"]
 ---
 

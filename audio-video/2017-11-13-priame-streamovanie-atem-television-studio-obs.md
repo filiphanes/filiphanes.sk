@@ -1,7 +1,7 @@
 ---
 date: "2017-11-13T17:17:49+01:00"
 title: "Priame streamovanie z ATEM Television Studio cez OBS"
-thumbnail: "img/streaming.jpg"
+thumbnail: "/img/streaming.jpg"
 tags: ["post", "video", "streaming"]
 ---
 

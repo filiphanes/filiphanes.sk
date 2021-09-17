@@ -4,12 +4,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
 
-  <title>{{ title }} | {{ site.title }}</title>
+  <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
   <meta name="robots" content="all,follow" />
   <meta name="author" content="Filip Hanes">
 
   <meta property="og:title" content="{{ title }}" />
-  <meta property="og:image" content="{{ thumbnail | url }}" />
+  {% if thumbnail %}<meta property="og:image" content="{{ thumbnail | url }}" />{% endif -%}
 
   <link rel="stylesheet" type="text/css" href="{{ '/css/style.css' | url }}" />
   <link rel="shortcut icon" type="image/x-icon" href="{{ '/img/favicon.png' | url }}" />

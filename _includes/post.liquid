@@ -9,6 +9,6 @@ layout: default.liquid
     {% comment %} {{ post | readingTime }} min čítania, {% endcomment %}
   </span>
 
-  <img src="{{thumbnail}}" />
+  {% if thumbnail %}<img src="{{ thumbnail | url }}" />{% endif -%}
   {{ content }}
 </article>

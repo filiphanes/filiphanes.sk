@@ -2,7 +2,7 @@
 date: "2021-09-09T21:30:00+02:00"
 title: "Don't reinvent file/object storage API"
 tags: ["post", "storage"]
-thumbnail: "img/streaming.jpg"
+thumbnail: "/img/streaming.jpg"
 
 ---
 In this article we will compare HTTP API of solutions providing access to files via HTTP.

@@ -2,7 +2,7 @@
 date: "2019-07-07T21:30:00+02:00"
 title: "Zdielanie LTE internetu na lokálnej sieti"
 tags: post, networking, linux
-thumbnail: "img/streaming.jpg"
+thumbnail: "/img/streaming.jpg"
 ---
 Telekom DSL internet s rýchlosťou 10/1 je v tejto dobe naozaj pomalý.
 Na vysielanie live video je bez debaty nevhodný. V našej lokalite sa nenašiel
