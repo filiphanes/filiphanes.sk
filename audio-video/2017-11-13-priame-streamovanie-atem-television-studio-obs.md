@@ -7,7 +7,7 @@ tags: ["post", "video", "streaming"]
 
 [ATEM Television Studio](https://www.blackmagicdesign.com/products/atemtelevisionstudiohd) je výborná strižňa za danú cenu. Staršia aj nová verzia. Umožňuje hardvérový encoding do H.264 kódeku a ukladanie na disk pomocou priloženého softvéru [Media Express](https://www.blackmagicdesign.com/products/decklink/mediaexpress). Cez [Decklink kartu](https://www.blackmagicdesign.com/products/decklink) sa dá video cez HDMI alebo SDI signál priniesť do počítača a ďalej nahrávať alebo streamovať cez WireCast alebo OBS.
 
-{{< figure src="/img/atemtelevisionstudio.jpg" title="ATEM Television Studio" >}}
+<figure src="/img/atemtelevisionstudio.jpg" title="ATEM Television Studio"></figure>
 
 [MX Light](http://mxlight.co.uk) je tiež super program, ktorý umožňuje priamo streamovať z ATEM TVS do rôznych formátov, ale nie je zadarmo a nevie prikladať titulky a púšťať do streamu ďalšie videá ako [OBS](https://obsproject.com).
 
