@@ -12,6 +12,6 @@ layout: default.liquid
 
 <div class="posts">
 {% for post in collections[tag] -%}
-    {% include post-list-entry %}
+    {% include 'post-list-entry.liquid' %}
 {%- endfor %}
 </div>

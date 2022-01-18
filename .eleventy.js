@@ -28,5 +28,7 @@ module.exports = (config) => {
         return n < 0 ? array.slice(n) : array.slice(0, n);
     });
 
-    return {};
+    return {
+        htmlTemplateEngine: "liquid",
+    };
 }
