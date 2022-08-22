@@ -4,6 +4,7 @@ module.exports = (config) => {
         .addPassthroughCopy('css')
         .addPassthroughCopy('img')
         .addPassthroughCopy('wp-content')
+        .addPassthroughCopy('txt')
         .addPassthroughCopy('zoznamy');
 
     config.addLiquidFilter('skDate', function(date) {

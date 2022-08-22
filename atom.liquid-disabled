@@ -1,0 +1,29 @@
+---
+permalink: /feed/atom.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>{{ site.name }}</title>
+	<subtitle>{{ site.description }}</subtitle>
+	<link href="https://filiphanes.sk/web/feed/" rel="self"/>
+	<link href="https://filiphanes.sk/web/"/>
+	<updated>{{ collections.feedPosts | getNewestCollectionItemDate | date: '%Y-%m-%d' }}</updated>
+	<id>http://filiphanes.sk/</id>
+	<author>
+		<name>Filip Hanes</name>
+		<email>filip@hanes.tech</email>
+	</author>
+	{%- for post in collections.post %}
+	{% capture idUrl %}{{ post.url | url | absoluteUrl('http://filiphanes.sk/') }}{% endcapture %}
+	{% capture absolutePostUrl %}{{ post.url | url | absoluteUrl('https://filiphanes.sk/') }}{% endcapture %}
+	<entry>
+		<title>{{ post.data.title }}</title>
+		<link href="{{ absolutePostUrl }}"/>
+		<updated>{{ post.date | date: '%Y-%m-%d' }}</updated>
+		<id>{{ idUrl }}</id>
+		<content type="html">
+		{{ post.templateContent }}
+		</content>
+	</entry>
+	{%- endfor %}
+</feed>
