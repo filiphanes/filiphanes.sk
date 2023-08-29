@@ -30,14 +30,14 @@
         }
     }
     
-    function sendQRCodeDataToAPI(data) {
+    function sendQRCodeDataToAPI(receiptId) {
         // Display scanned QR code data
-        log('Scanned QR code: ' + data);
+        log('Scanned QR code: ' + receiptId);
             
         fetch('https://ekasa.financnasprava.sk/mdu/api/v1/opd/receipt/find', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ receiptId: data })
+            body: JSON.stringify({ receiptId })
         }).then(response => {
             if (response.ok) {
                 return response.json();
@@ -46,6 +46,11 @@
             }
         }).then(data => {
             log('API response: ' + JSON.stringify(data));
+            fetch(`https://blocky.turcianskydvor.pages.dev/${receiptId}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            })
         }).catch(error => {
             logError('API Error: ' + error);
         });
