@@ -34,26 +34,13 @@
         // Display scanned QR code data
         log('Scanned QR code: ' + receiptId);
             
-        fetch('https://ekasa.financnasprava.sk/mdu/api/v1/opd/receipt/find', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ receiptId })
-        }).then(response => {
-            let text = '';
-            if (response.ok) {
-                return response.text()
-            } else {
-                throw new Error('Failed to fetch data from the API.');
-            }
-        }).then(text => {
-            log('API response: ' + text);
-            fetch(`https://blocky.hanes.workers.dev/${receiptId}`, {
-                method: 'PUT',
-                headers: { 'Content-Type': 'application/json' },
-                body: text,
-            })
-        }).catch(error => {
-            logError('API Error: ' + error);
+        fetch(`https://blocky.hanes.workers.dev/${receiptId}`)
+        .then(response => response.text())
+        .then(text => {
+          log('API response: ' + text);
+        })
+        .catch(error => {
+          logError('API Error: ' + error);
         });
     }
     
