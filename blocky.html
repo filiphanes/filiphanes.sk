@@ -14,8 +14,13 @@
   
   async function scanQRCode() {
     try {
-      qrScanner.srcObject = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment',  } });
-      const scanner = new Instascan.Scanner({ video: qrScanner, backgroundScan: false, scanPeriod: 3 });
+      const scanner = new Instascan.Scanner({
+        continuous: true,
+        mirror: false,
+        video: qrScanner,
+        backgroundScan: false,
+        scanPeriod: 1,
+       });
       scanner.addListener('scan', sendQR);
       Instascan.Camera.getCameras().then(cameras => {
         if (cameras.length > 0) {
