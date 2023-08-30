@@ -41,10 +41,11 @@
         }).then(response => {
             let text = '';
             if (response.ok) {
-                text = response.text();
+                return response.text()
             } else {
                 throw new Error('Failed to fetch data from the API.');
             }
+        }).then(text => {
             log('API response: ' + text);
             fetch(`https://blocky.hanes.workers.dev/${receiptId}`, {
                 method: 'PUT',
