@@ -39,17 +39,17 @@
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ receiptId })
         }).then(response => {
+            let text = '';
             if (response.ok) {
-                return response.json();
+                text = response.text();
             } else {
                 throw new Error('Failed to fetch data from the API.');
             }
-        }).then(data => {
-            log('API response: ' + JSON.stringify(data));
-            fetch(`https://blocky.turcianskydvor.pages.dev/${receiptId}`, {
+            log('API response: ' + text);
+            fetch(`https://blocky.hanes.workers.dev/${receiptId}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data),
+                body: text,
             })
         }).catch(error => {
             logError('API Error: ' + error);
@@ -65,7 +65,7 @@
     function logError(message) {
         const errorMessage = document.createElement('p');
         errorMessage.style.color = 'red';
-        errorMessage.textContent = 'Error: ' + message;
+        errorMessage.textContent = message;
         logDiv.appendChild(errorMessage);
     }
     
